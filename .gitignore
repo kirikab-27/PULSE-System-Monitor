@@ -1,20 +1,57 @@
-# ログファイル
+# PULSE System Monitor - Git Ignore Configuration
+
+# Python files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+.Python
+build/
+dist/
+*.egg
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# PULSE Project specific
 logs/
-*.log
-*.txt
-
-# 一時ファイル
 tmp/
-*.tmp
 *_done.txt
+*_progress.log
+*.tmp
 
-# OS固有
+# System and monitoring data
+.disk_monitor_history/
+monitoring_data/
+system_reports/
+
+# OS specific
 .DS_Store
 Thumbs.db
 
-# エディタ
+# IDEs and editors
+.vscode/
+.idea/
 *.swp
 *.swo
 *~
-.vscode/
-.idea/ 
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Jupyter
+.ipynb_checkpoints
+
+# mypy
+.mypy_cache/
+
+# Documentation builds
+docs/_build/
